@@ -33,4 +33,58 @@ public class JUnitSimpleDemonstration {
         // test
         assertEquals(actualResult,expectedResult);
     }
+    @Test
+    public void test_findMin() {
+        Integer[] array = new Integer[]{1, 3, 5, 7, -10};
+        Finder finder = new Finder();
+        Integer expectedResult = -10;
+        Integer actualResult = finder.findMin(array);
+        // test
+        assertEquals(actualResult,expectedResult);
+    }
+    @Test
+    public void test_findMinEmpty() {
+        Integer[] array = new Integer[]{};
+        Finder finder = new Finder();
+        Integer expectedResult = null;
+        Integer actualResult = finder.findMin(array);
+        // test
+        assertEquals(actualResult,expectedResult);
+    }
+    @Test
+    public void test_findMinNull() {
+        Integer[] array = null;
+        Finder finder = new Finder();
+        Integer expectedResult = null;
+        Integer actualResult = finder.findMin(array);
+        // test
+        assertEquals(actualResult,expectedResult);
+    }
+    @Test
+    public void test_findMax() {
+        Integer[] array = new Integer[]{1, 3, 5, 7, -10};
+        Finder finder = new Finder();
+        Integer expectedResult = 7;
+        Integer actualResult = finder.findMax(array);
+        // test
+        assertEquals(actualResult,expectedResult);
+    }
+    @Test
+    public void test_findMaxEmpty() {
+        Integer[] array = new Integer[]{};
+        Finder finder = new Finder();
+        Integer expectedResult = null;
+        Integer actualResult = finder.findMax(array);
+        // test
+        assertEquals(actualResult,expectedResult);
+    }
+    @Test
+    public void test_findMaxNull() {
+        Integer[] array = null;
+        Finder finder = new Finder();
+        Integer expectedResult = null;
+        Integer actualResult = finder.findMax(array);
+        // test
+        assertEquals(actualResult,expectedResult);
+    }
 }
